@@ -9,7 +9,7 @@ env:
   - name: HORUSEC_MANAGER_URL
     value: http://horus-dev.zup.com.br
   - name: HORUSEC_BROKER_HOST
-    value: rabbitmq
+    value: rabbitmq.horus-dev.svc.cluster.local
   - name: HORUSEC_BROKER_PORT
     value: "5672"
   - name: HORUSEC_DATABASE_SQL_LOG_MODE
