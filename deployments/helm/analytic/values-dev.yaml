@@ -1,0 +1,6 @@
+image:
+  repository: 671982376808.dkr.ecr.us-east-1.amazonaws.com/horusec-analytic
+  pullPolicy: IfNotPresent
+
+ingress:
+  enabled: false
