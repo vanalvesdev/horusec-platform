@@ -1,3 +1,7 @@
+image:
+  repository: 671982376808.dkr.ecr.us-east-1.amazonaws.com/horusec-auth
+  pullPolicy: IfNotPresent
+
 ingress:
   enabled: false
 
