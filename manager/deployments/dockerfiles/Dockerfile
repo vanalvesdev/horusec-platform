@@ -12,13 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM node:14.5.0-alpine AS builder
+FROM node:10-alpine AS builder
 
 COPY . /manager
 
 WORKDIR /manager
 
-RUN npm install
+RUN npm install -g typescript
+RUN npm install --production
 RUN npm run build
 
 FROM nginx:1.18.0-alpine
